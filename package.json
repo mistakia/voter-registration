@@ -1,0 +1,19 @@
+{
+    "name": "voter-registration",
+    "version": "0.0.1",
+    "description": "US voter registration confirmation",
+    "main": "index.js",
+    "dependencies": {
+	"cheerio": "^0.20.0",
+	"moment": "^2.14.1",
+	"request": "^2.74.0",
+	"require-directory": "^2.1.1",
+	"yargs": "^4.8.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Kia Rahimian",
+    "license": "MIT"
+}

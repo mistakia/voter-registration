@@ -17,9 +17,9 @@ module.exports = function(opts, cb) {
 	    __EVENTVALIDATION: eventValidation,
 	    ctl00$ContentPlaceHolder1$txtFirstName: opts.first_name,
 	    ctl00$ContentPlaceHolder1$txtLastName: opts.last_name,
-	    ctl00$ContentPlaceHolder1$ddBirthMonth: opts.dob.month, //leading zero
-	    ctl00$ContentPlaceHolder1$txtBirthDay: opts.dob.day,
-	    ctl00$ContentPlaceHolder1$txtBirthYear: opts.dob.year,
+	    ctl00$ContentPlaceHolder1$ddBirthMonth: opts.dob.format('MM'),
+	    ctl00$ContentPlaceHolder1$txtBirthDay: opts.dob.format('DD'),
+	    ctl00$ContentPlaceHolder1$txtBirthYear: opts.dob.format('YYYY'),
 	    ctl00$ContentPlaceHolder1$btnSearch: 'Search'
 	}
     }, function(err, res, body) {

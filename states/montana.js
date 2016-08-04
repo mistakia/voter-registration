@@ -12,7 +12,7 @@ module.exports = function(opts, cb) {
 	    action: 'search_submitted',
 	    first_name: opts.first_name,
 	    last_name: opts.last_name,
-	    dob: opts.dob.full
+	    dob: opts.dob.format('DD/MM/YYYY')
 	}
     }, function(err, res, body) {
 	if (err) {

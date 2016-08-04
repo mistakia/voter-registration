@@ -19,9 +19,9 @@ module.exports = function(opts, cb) {
 	    txtLname: opts.last_name,
 	    txtFName: opts.first_name,
 	    txtMName: opts.middle_name,
-	    txtmm: opts.dob.month,
-	    txtDD: opts.dob.day,
-	    txtYYYY: opts.dob.year,
+	    txtmm: opts.dob.format('MM'),
+	    txtDD: opts.dob.format('DD'),
+	    txtYYYY: opts.dob.format('YYYY'),
 	    NmeCounty: county
 	}
     }, function(err, res, body) {

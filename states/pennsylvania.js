@@ -23,7 +23,7 @@ module.exports = function(opts, cb) {
 	    ctl00$ContentPlaceHolder1$txtVRSOpt2Item5: opts.middle_name,
 	    ctl00$ContentPlaceHolder1$txtVRSOpt2Item3: opts.last_name,
 	    ctl00$ContentPlaceHolder1$SuffixCombo: opts.suffix,
-	    ctl00$ContentPlaceHolder1$txtVRSOpt2Item4: opts.dob.full,
+	    ctl00$ContentPlaceHolder1$txtVRSOpt2Item4: opts.dob.format('MM/DD/YYYY'),
 	    ctl00$ContentPlaceHolder1$btnContinue: 'Continue'
 	}
     }, function(err, res, body) {

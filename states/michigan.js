@@ -21,8 +21,8 @@ module.exports = function(opts, cb) {
 	    __EVENTVALIDATION: eventValidation,
 	    ctl00$ContentPlaceHolder1$vsFname: opts.first_name,
 	    ctl00$ContentPlaceHolder1$vsLname: opts.last_name,
-	    ctl00$ContentPlaceHolder1$vsMOB2: opts.dob.month, //TODO
-	    ctl00$ContentPlaceHolder1$vsYOB2: opts.dob.year,
+	    ctl00$ContentPlaceHolder1$vsMOB2: opts.dob.format('MMMM'),
+	    ctl00$ContentPlaceHolder1$vsYOB2: opts.dob.format('YYYY'),
 	    ctl00$ContentPlaceHolder1$vsZip: opts.zipcode,
 	    ctl00$ContentPlaceHolder1$btnSearchByName: 'Search',
 	    ctl00$ContentPlaceHolder1$vsDLN: null,

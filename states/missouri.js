@@ -20,7 +20,7 @@ module.exports = function(opts, cb) {
 	    txtVLastName: opts.last_name,
 	    txtVHouseNumber: '', //TODO
 	    txtVStreetName: '', // street name without type
-	    txtVDOB: opts.dob.full,
+	    txtVDOB: opts.dob.format('DD/MM/YYYY'),
 	    VJurisdictionsDropdown: jurisdictionCode,
 	    btnVoterLookup: 'Lookup'
 	}

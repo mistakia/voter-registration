@@ -7,7 +7,7 @@ module.exports = function(opts, cb) {
 	form: {
 	    firstName: opts.first_name,
 	    lastName: opts.last_name,
-	    birthDate: opts.dob.full,
+	    birthDate: opts.dob.format('MM/DD/YYYY'),
 	    streetAddress: '', //TODO
 	    city: '', //TODO,
 	    zipCode: opts.zipcode,

@@ -21,7 +21,7 @@ module.exports = function(opts, cb) {
 	    ddlCounty: countyCode,
 	    txtLastName: opts.last_name,
 	    txtFirstName: opts.first_name,
-	    ddlBirthYear: opts.dob.year,
+	    ddlBirthYear: opts.dob.format('YYYY'),
 	    btnSubmit: 'Continue',
 	    countyvalue: null,
 	    lastnamevalue: null,

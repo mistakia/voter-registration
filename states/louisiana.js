@@ -8,7 +8,7 @@ module.exports = function(opts, cb) {
 	    FirstName: opts.first_name,
 	    LastName: opts.last_name,
 	    ZipCode: opts.zipcode,
-	    MonthYear: opts.dob.month + '/' + opts.dob.year
+	    MonthYear: opts.dob.format('MM/YYYY')
 	}
     }, function(err, res, body) {
 	if (err) {

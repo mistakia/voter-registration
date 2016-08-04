@@ -8,7 +8,7 @@ module.exports = function(opts, cb) {
 	    FIRST_NAME: opts.first_name,
 	    MIDDLE_NAME: opts.middle_name,
 	    LAST_NAME: opts.last_name,
-	    DATE_OF_BIRTH: opts.dob.full,
+	    DATE_OF_BIRTH: opts.dob.format('DD/MM/YYYY'),
 	    SSN_LAST4: null,
 	    submit: 'Submit'
 	}

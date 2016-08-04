@@ -8,8 +8,8 @@ module.exports = function(opts, cb) {
 	    firstName: opts.first_name,
 	    middleName: opts.middle_name,
 	    lastName: opts.last_name,
-	    monthDOB: opts.dob.month, //no leading zero
-	    yearDOB: opts.dob.year,
+	    monthDOB: opts.dob.format('M'),
+	    yearDOB: opts.dob.format('YYYY'),
 	    incDefDOB: 'Y',
 	    userProcess: 'PublicSearch',
 	    EVENT: 'PublicSearchResult'

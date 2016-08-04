@@ -15,7 +15,7 @@ module.exports = function(opts, cb) {
 	    oldEnough: false,
 	    firstName: opts.first_name,
 	    lastName: opts.last_name,
-	    birthDate: opts.dob.full,
+	    birthDate: opts.dob.format('MM/DD/YYYY'),
 	    zipCode: opts.zipcode,
 	    submitSearch: 'Submit',
 	    page: 20,

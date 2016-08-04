@@ -13,9 +13,9 @@ module.exports = function(opts, cb) {
 	    nameFirst: opts.first_name,
 	    nameLast: opts.last_name,
 	    suffix: opts.suffix,
-	    dobMonth: opts.dob.month,
-	    dobDay: opts.dob.day,
-	    dobYear: opts.dob.year,
+	    dobMonth: opts.dob.format('MM'),
+	    dobDay: opts.dob.format('DD'),
+	    dobYear: opts.dob.format('YYYY'),
 	    search: 'Search'
 	}
     }, function(err, res, body) {

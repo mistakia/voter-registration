@@ -7,7 +7,7 @@ module.exports = function(opts, cb) {
 	qs: {
 	    f: opts.first_name,
 	    l: opts.last_name,
-	    b: opts.dob.full,
+	    b: opts.dob.format('M/D/YYYY'),
 	    org: null,
 	    r: 'https://www.google.com/'
 	}

@@ -18,7 +18,7 @@ module.exports = function(opts, cb) {
 	    __VIEWSTATEGENERATOR: viewStateGenerator,
 	    ctl00$ContentPlaceHolder1$txtLastName: opts.last_name,
 	    ctl00$ContentPlaceHolder1$txtFirstName: opts.first_name,
-	    ctl00$ContentPlaceHolder1$txtDOB: opts.dob.full,
+	    ctl00$ContentPlaceHolder1$txtDOB: opts.dob.format('MM/DD/YYYY'),
 	    ctl00$ContentPlaceHolder1$drpDownCounty: opts.county,
 	    ctl00$ContentPlaceHolder1$txtZip: opts.zipcode,
 	    ctl00$ContentPlaceHolder1$txtSearch: 'Search'

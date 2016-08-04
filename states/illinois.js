@@ -20,7 +20,7 @@ module.exports = function(opts, cb) {
 	    __EVENTVALIDATION: eventValidation,
 	    ctl00$MainContent$txtFirstName: opts.first_name,
 	    ctl00$MainContent$txtLastName: opts.last_name,
-	    ctl00$MainContent$txtBirthDate: opts.dob.full,
+	    ctl00$MainContent$txtBirthDate: opts.dob.format('DD-MM-YYYY'),
 	    ctl00$MainContent$txtZipcode: opts.zipcode,
 	    ctl00$MainContent$txtStreetNumber: null,
 	    ctl00$MainContent$btnSubmit: 'Submit'

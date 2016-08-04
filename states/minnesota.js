@@ -12,9 +12,9 @@ module.exports = function(opts, cb) {
 	    __VIEWSTATE: viewState,
 	    ctl00$MainContent$txtFirstName: opts.first_name,
 	    ctl00$MainContent$txtLastName: opts.last_name,
-	    ctl00$MainContent$ddlDobMonths: opts.dob.month,
-	    ctl00$MainContent$ddlDobDays: opts.dob.day,
-	    ctl00$MainContent$ddlDobYears: opts.dob.year,
+	    ctl00$MainContent$ddlDobMonths: opts.dob.format('M'),
+	    ctl00$MainContent$ddlDobDays: opts.dob.format('D'),
+	    ctl00$MainContent$ddlDobYears: opts.dob.format('YYYY'),
 	    ctl00$MainContent$txtHouseNumber: '', // house number
 	    ctl00$MainContent$ddlStreets: '', //??
 	    ctl00$MainContent$txtUnitNumber: null

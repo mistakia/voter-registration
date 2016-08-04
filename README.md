@@ -1,7 +1,7 @@
 # Voter Registration Confirmation
 United States voter registration confirmation & status. Work in progress.
 
-**Tested**: Washington DC, Maryland, New Mexico
+**Tested**: Washington DC, Maryland, New Mexico, Pennsylvania
 
 **Unavailable**: Hawaii, Maine, Mississippi, Wyoming
 
@@ -22,7 +22,7 @@ notes: vermont requires last 4 of ssn or drivers license, virginia requires last
 	last_name: '',
 	dob: '', //format: MM-DD-YYYY
 	zipcode: '', //needed for washington dc, maryland
-	county: '' //needed for new mexico
+	county: '' //needed for new mexico, pennsylvania
 }
 ```
 

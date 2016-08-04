@@ -12,7 +12,7 @@ module.exports = function(opts, cb) {
 	    firstName: opts.first_name,
 	    lastName: opts.last_name,
 	    county: countyCode,
-	    dob: opts.dob.full,
+	    dob: opts.dob.format('DD/MM/YYYY'),
 	    countyName: countyName,
 	    currentSearch: 1
 	}

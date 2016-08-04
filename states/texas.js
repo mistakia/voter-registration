@@ -13,7 +13,7 @@ module.exports = function(opts, cb) {
 	    lastName: opts.last_name,
 	    nmSuffix: opts.suffix,
 	    county: countyCode,
-	    dob: opts.dob.full,
+	    dob: opts.dob.format('MM/DD/YYYY'),
 	    adZip5: opts.zipcode,
 	    adZip4: null		    
 	}

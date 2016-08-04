@@ -23,7 +23,7 @@ module.exports = function(opts, cb) {
 	    ddlTown: town,
 	    lname: opts.last_name,
 	    fname: opts.first_name,
-	    birthday: opts.dob.full,
+	    birthday: opts.dob.format('DD/MM/YYYY'),
 	    Search: 'Search'
 	}
     }, function(err, res, body) {

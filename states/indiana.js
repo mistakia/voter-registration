@@ -21,7 +21,7 @@ module.exports = function(opts, cb) {
 	    ctl00$ContentPlaceHolder1$usrCounty$cboCounty: county,
 	    ctl00$ContentPlaceHolder1$txtLast: opts.last_name,
 	    ctl00$ContentPlaceHolder1$txtFirst: opts.first_name,
-	    ctl00$ContentPlaceHolder1$usrDOB$txtDate: opts.dob.full,
+	    ctl00$ContentPlaceHolder1$usrDOB$txtDate: opts.dob.format('DD/MM/YYYY'),
 	    ctl00$ContentPlaceHolder1$btnSearch: 'Find'
 	}
     }, function(err, res, body) {

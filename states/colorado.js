@@ -11,7 +11,7 @@ module.exports = function(opts, cb) {
 	    'findVoterRegForm:voterSearchLastId': opts.last_name,
 	    'findVoterRegForm:voterSearchFirstId': opts.first_name,
 	    'findVoterRegForm:voterSearchZipId': opts.zipcode,
-	    'findVoterRegForm:voterDOB': opts.dob.full,
+	    'findVoterRegForm:voterDOB': opts.dob.format('DD/MM/YYYY'),
 	    'findVoterRegForm:voterSearchButtonId': 'Search',
 	    'javax.faces.ViewState': viewState
 	}

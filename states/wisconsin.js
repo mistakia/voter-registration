@@ -8,7 +8,7 @@ module.exports = function(opts, cb) {
 	body: {
 	    firstName: opts.first_name,
 	    lastName: opts.last_name,
-	    birthDate: opts.dob.full
+	    birthDate: opts.dob.format('MM/DD/YYYY')
 	}
     }, function(err, res, body) {
 	if (err) {

@@ -11,7 +11,7 @@ module.exports = function(opts, cb) {
 	    __RequestVerificationToken: token,
 	    FirstName: opts.first_name,
 	    LastName: opts.last_name,
-	    DateOfBirth: opts.dob.full
+	    DateOfBirth: opts.dob.format('MM/DD/YYYY')
 	}
     }, function(err, res, body) {
 	if (err) {

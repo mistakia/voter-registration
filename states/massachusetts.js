@@ -24,9 +24,9 @@ module.exports = function(opts, cb) {
 	    ctl00$MainContent$HiddenInactiveVoterFactSheetPageURL: factSheetPage,
 	    ctl00$MainContent$txtFirstName: opts.first_name,
 	    ctl00$MainContent$txtLastName: opts.last_name,
-	    ctl00$MainContent$ddlMonth: opts.dob.month,
-	    ctl00$MainContent$ddlDay: opts.dob.day,
-	    ctl00$MainContent$ddlYear: opts.dob.year,
+	    ctl00$MainContent$ddlMonth: opts.dob.format('M'),
+	    ctl00$MainContent$ddlDay: opts.dob.format('D'),
+	    ctl00$MainContent$ddlYear: opts.dob.format('YYYY'),
 	    ctl00$MainContent$txtZip: opts.zipcode,
 	    ctl00$MainContent$chkUnderstand: 'on',
 	    ctl00$MainContent$btnSearch: 'Search'

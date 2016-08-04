@@ -25,7 +25,7 @@ module.exports = function(opts, cb) {
 	    ctl00$cphMain$txtLastName$input: opts.last_name,
 	    ctl00$cphMain$txtLastName$validatorCallout_ClientState: null,
 	    ctl00$cphMain$dobDateOfBirth$maskedEdit_ClientState: null,
-	    ctl00$cphMain$dobDateOfBirth$input: opts.dob.full,
+	    ctl00$cphMain$dobDateOfBirth$input: opts.dob.format('MM/DD/YYYY'),
 	    ctl00$cphMain$dobDateOfBirth$validatorCallout_ClientState: null,
 	    ctl00$cphMain$dobDateOfBirth$rangeValidatorCallout_ClientState: null,
 	    ctl00$buttonContent$btnSubmit: 'Submit',

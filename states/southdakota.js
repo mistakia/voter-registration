@@ -19,7 +19,7 @@ module.exports = function(opts, cb) {
 	    __EVENTVALIDATION: eventValidation,
 	    ctl00$MainContent$txtFirstName: opts.first_name,
 	    ctl00$MainContent$txtLastName: opts.last_name,
-	    ctl00$MainContent$txtDOB: opts.dob.full,
+	    ctl00$MainContent$txtDOB: opts.dob.format('MM/DD/YYYY'),
 	    ctl00$MainContent$btnSearch: 'Search'
 	}
     }, function(err, res, body) {

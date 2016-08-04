@@ -21,7 +21,7 @@ module.exports = function(opts, cb) {
 	    txtFirstName: opts.first_name,
 	    txtMiddleInitial: opts.middle_name,
 	    txtLastName: opts.last_name,
-	    txtBirthDate: opts.dob.full,
+	    txtBirthDate: opts.dob.format('MM/DD/YYYY'),
 	    cboCounty: countyCode,
 	    cblStatus$0: 'A,I,S',
 	    btnSearch: 'Search'

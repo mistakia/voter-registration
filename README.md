@@ -20,7 +20,7 @@ notes: vermont requires last 4 of ssn or drivers license, virginia requires last
 {
 	first_name: '',
 	last_name: '',
-	dob: '',
+	dob: '', //format: MM-DD-YYYY
 	zipcode: '', //needed for washington dc, maryland
 	county: '' //needed for new mexico
 }

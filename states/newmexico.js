@@ -2,7 +2,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 
 module.exports = function(opts, cb) {
-    var countyCode = {
+    var counties = {
 	BERNALILLO: 303200,
 	CATRON: 301300,
 	CHAVES: 301400,
@@ -38,13 +38,20 @@ module.exports = function(opts, cb) {
 	VALENCIA: 300300
     };
 
+    var countyCode = counties[opts.county.toUpperCase()];
+
+    if (!countyCode) {
+	cb(new Error('Missing valid county'));
+	return;
+    }
+
     var form = {
 	action: 'Search',
-	county: countyCode[opts.county.toUpperCase()],
+	county: countyCode,
 	nameFirst: opts.first_name,
 	nameLast: opts.last_name,
 	suffix: opts.suffix,
-	dobMonth: opts.dob.format('MM'), //leading zero
+	dobMonth: opts.dob.format('MM'),
 	dobDay: opts.dob.format('DD'),
 	dobYear: opts.dob.format('YYYY'),
 	search: 'Search'

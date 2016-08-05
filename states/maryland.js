@@ -56,7 +56,7 @@ module.exports = function(opts, cb) {
 	    var $ = cheerio.load(body);
 
 	    var result = {
-		registered: null,
+		registered: false,
 		party: null,
 		message: null
 	    };
@@ -76,7 +76,7 @@ module.exports = function(opts, cb) {
 	    }
 
 	    if (result.party)
-		result.registered = 'YES';
+		result.registered = true;
 
 	    cb(null, result);
 	});

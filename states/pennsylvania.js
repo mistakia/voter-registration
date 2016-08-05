@@ -124,7 +124,7 @@ module.exports = function(opts, cb) {
 	    }
 
 	    var result = {
-		registered: null,
+		registered: false,
 		status: null,
 		party: null
 	    };
@@ -137,7 +137,7 @@ module.exports = function(opts, cb) {
 	    }
 
 	    if (result.status)
-		result.registered = 'YES';
+		result.registered = true;
 
 	    try {
 		var partyRe = /<b>Party\s*:\s*<\/b>([^<]*)<br/ig;

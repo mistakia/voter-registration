@@ -11,7 +11,7 @@ United States voter registration confirmation & status. Work in progress.
 
 #### command line example
 ```
-node index.js --state maryland --first firstName --last lastName --zipcode 20854 --dob="12/24/90"
+node index.js --address 20854 --first firstName --last lastName --dob="12/24/90"
 ```
 
 #### options
@@ -21,18 +21,17 @@ notes: vermont requires last 4 of ssn or drivers license, virginia requires last
 	first_name: '',
 	last_name: '',
 	dob: '', //format: MM-DD-YYYY
-	zipcode: '', //needed for washington dc, maryland
-	county: '' //needed for new mexico, pennsylvania
+	address: '' //full address preferred but may work with just zip code
 }
 ```
 
 #### example
 ```
-check('maryland').get({
+check({
 	first_name: 'firstName',
 	last_name: 'lastName',
 	dob: moment('12-24-90', 'MM-DD-YYYY'),
-	zipcode: '20854'
+	address: '20854'
 }, function(err, result) {
 	if (err) console.log(err);
 	console.log(result);

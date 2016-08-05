@@ -5,10 +5,10 @@ module.exports = function(opts, cb) {
     var form = {
 	txtFirstName: opts.first_name,
 	txtLastName: opts.last_name,
-	txtDOBMonth: opts.dob.format('M'), // no leading zero
+	txtDOBMonth: opts.dob.format('M'),
 	txtDOBDate: opts.dob.format('D'),
 	txtDOBYear: opts.dob.format('YYYY'),
-	txtZipCode: opts.zipcode,
+	txtZipCode: opts.address.postcode,
 	txtSearchType: 'AC',
 	txtLN: opts.last_name,
 	txtFN: opts.first_name,

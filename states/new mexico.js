@@ -38,7 +38,7 @@ module.exports = function(opts, cb) {
 	VALENCIA: 300300
     };
 
-    var countyCode = counties[opts.county.toUpperCase()];
+    var countyCode = counties[opts.address.county.toUpperCase()];
 
     if (!countyCode) {
 	cb(new Error('Missing valid county'));

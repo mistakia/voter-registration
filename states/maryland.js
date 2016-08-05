@@ -35,7 +35,7 @@ module.exports = function(opts, cb) {
 	    ctl00$MainContent$txtDOBMonth: opts.dob.format('MM'),
 	    ctl00$MainContent$txtDOBDay: opts.dob.format('DD'),
 	    ctl00$MainContent$txtDOBYear: opts.dob.format('YYYY'),
-	    ctl00$MainContent$txtSearchZipCode: opts.zipcode,
+	    ctl00$MainContent$txtSearchZipCode: opts.address.postcode,
 	    ctl00$MainContent$txtSearchHouseNumber: null,
 	    ctl00$MainContent$txtSearchMiddleInitial: opts.middle_initial,
 	    ctl00$MainContent$btnSearch: 'Search'

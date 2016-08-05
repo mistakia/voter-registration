@@ -1,7 +1,7 @@
 # Voter Registration Confirmation
 United States voter registration confirmation & status. Work in progress.
 
-**Tested**: Washington DC, Maryland, New Mexico, Pennsylvania
+**Tested**: Washington DC, Maryland, New Mexico, Pennsylvania, Washington
 
 **Unavailable**: Hawaii, Maine, Mississippi, Wyoming
 

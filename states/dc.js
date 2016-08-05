@@ -26,7 +26,7 @@ module.exports = function(opts, cb) {
 	}
 
 	var result = {
-	    registered: null,
+	    registered: false,
 	    party: null
 	};
 
@@ -40,7 +40,7 @@ module.exports = function(opts, cb) {
 	}
 
 	try {
-	    result.registered = rows.eq(3).children().eq(2).text().trim();
+	    result.registered = rows.eq(3).children().eq(2).text().trim() === 'YES';
 	} catch(e) {
 
 	}

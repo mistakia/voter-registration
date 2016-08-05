@@ -98,7 +98,7 @@ module.exports = function(opts, cb) {
 	    }
 
 	    var result = {
-		registered: null,
+		registered: false,
 		reason: null,
 		status: null,
 		party: null
@@ -109,7 +109,7 @@ module.exports = function(opts, cb) {
 	    var registrant = $('#registrant .data');
 
 	    if (registrant.length)
-		result.registered = 'YES';
+		result.registered = true;
 
 	    try {
 		result.status = registrant.eq(1).text().trim();

@@ -1,8 +1,18 @@
 {
     "name": "voter-registration",
     "version": "0.0.1",
+    "author": "Kia Rahimian",
     "description": "US voter registration confirmation",
     "main": "index.js",
+    "license": "MIT",
+    "bugs": {
+	"url": "https://github.com/krahimian/voter-registration/issues"
+    },
+    "homepage": "https://github.com/krahimian/voter-registration",
+    "repository": {
+	"type": "git",
+	"url": "https://github.com/krahimian/voter-registration.git"
+    },
     "dependencies": {
 	"cheerio": "^0.20.0",
 	"moment": "^2.14.1",
@@ -14,6 +24,13 @@
     "scripts": {
 	"test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Kia Rahimian",
-    "license": "MIT"
+    "license": "MIT",
+    "keywords": [
+	"voter registration",
+	"registration",
+	"u.s.",
+	"election",
+	"voting",
+	"records"
+    ]
 }

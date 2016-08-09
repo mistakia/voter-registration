@@ -1,12 +1,11 @@
-var argv = require('yargs').argv;
 var request = require('request');
 var moment = require('moment');
 var cheerio = require('cheerio');
 var states = require('./states');
 
-var check = function(opts, cb) {
+module.exports = function(opts, cb) {
     request({
-	url: 'https://nominatim.openstreetmap.org/?format=json&addressdetails=1&q=11510+seven+locks+rd+potomac',
+	url: 'https://nominatim.openstreetmap.org/',
 	json: true,
 	qs: {
 	    format: 'json',
@@ -31,6 +30,7 @@ var check = function(opts, cb) {
 	    return;
 	}
 
+        opts.dob = moment(opts.dob, 'MM-DD-YYYY');
 	opts.address = item.address;
 	opts.address.county = opts.address.county && opts.address.county.replace('County', '').trim();
 
@@ -39,20 +39,3 @@ var check = function(opts, cb) {
 	state(opts, cb);
     });
 };
-
-module.exports = check;
-
-// CLI 
-if (!module.parent) {
-
-    check({
-	address: argv.address,
-	first_name: argv.first,
-	last_name: argv.last,
-	dob: moment(argv.dob, 'MM-DD-YYYY')
-    }, function(err, result) {
-	if (err) console.log(err);
-	console.log(result);
-    });
-
-}

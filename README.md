@@ -11,7 +11,7 @@ United States voter registration confirmation & status. Work in progress.
 
 #### command line example
 ```
-node index.js --address 20854 --first firstName --last lastName --dob="12/24/90"
+node bin/cmd.js --address 20854 --first firstName --last lastName --dob="12/24/90"
 ```
 
 #### options

@@ -1,36 +1,34 @@
 {
-    "name": "voter-registration",
-    "version": "0.0.1",
-    "author": "Kia Rahimian",
-    "description": "US voter registration confirmation",
-    "main": "index.js",
-    "license": "MIT",
-    "bugs": {
-	"url": "https://github.com/krahimian/voter-registration/issues"
-    },
-    "homepage": "https://github.com/krahimian/voter-registration",
-    "repository": {
-	"type": "git",
-	"url": "https://github.com/krahimian/voter-registration.git"
-    },
-    "dependencies": {
-	"cheerio": "^0.20.0",
-	"moment": "^2.14.1",
-	"request": "^2.74.0",
-	"require-directory": "^2.1.1",
-	"yargs": "^4.8.1"
-    },
-    "devDependencies": {},
-    "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "license": "MIT",
-    "keywords": [
-	"voter registration",
-	"registration",
-	"u.s.",
-	"election",
-	"voting",
-	"records"
-    ]
+   "name": "voter-registration",
+   "version": "0.0.1",
+   "description": "US voter registration confirmation",
+   "main": "index.js",
+   "license": "MIT",
+   "bugs": {
+      "url": "https://github.com/mistakia/voter-registration/issues"
+   },
+   "homepage": "https://github.com/mistakia/voter-registration",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/mistakia/voter-registration.git"
+   },
+   "dependencies": {
+      "cheerio": "^0.20.0",
+      "moment": "^2.14.1",
+      "request": "^2.74.0",
+      "require-directory": "^2.1.1",
+      "yargs": "^4.8.1"
+   },
+   "devDependencies": {},
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "keywords": [
+      "voter registration",
+      "registration",
+      "u.s.",
+      "election",
+      "voting",
+      "records"
+   ]
 }
